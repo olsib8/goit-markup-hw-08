@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--secondary-background-color);
+}
+.footer__size {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__area {
+  display: flex;
+  align-items: baseline;
+}
+.logo__footerColor {
+  color: var(--third-text-color);
+}

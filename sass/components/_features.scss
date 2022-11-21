@@ -1,0 +1,29 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features__title {
+  line-height: 1.14;
+  text-transform: uppercase;
+  max-width: 270px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.features__list {
+  display: flex;
+  gap: 30px;
+}
+.features__area {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-background-color);
+  margin-bottom: 30px;
+}
+.features__text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+  max-width: 270px;
+}

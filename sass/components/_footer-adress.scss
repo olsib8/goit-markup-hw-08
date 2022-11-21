@@ -1,0 +1,38 @@
+.logo__address {
+  margin-top: 20px;
+}
+.address__distance {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__reference {
+  color: var(--third-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+}
+
+.address__link {
+  color: var(--fourth-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+}
+
+.address__text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}

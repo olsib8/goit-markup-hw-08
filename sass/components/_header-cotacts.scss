@@ -1,0 +1,17 @@
+.options__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.options__link {
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+}
