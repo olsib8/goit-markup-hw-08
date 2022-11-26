@@ -727,6 +727,12 @@ ol {
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .clints__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 
 .clients__list {
   display: flex;
@@ -884,8 +890,7 @@ ol {
 }
 
 .footer__area {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .logo__footerColor {
@@ -893,11 +898,12 @@ ol {
 }
 
 .logo__address {
-  margin-top: 20px;
+  margin-top: 28px;
+  margin-bottom: 60px;
 }
 
 .address__distance {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 .address__distance:last-child {
   margin-bottom: 0;
@@ -930,7 +936,7 @@ ol {
 }
 
 .footer__secondary {
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__title {
@@ -974,16 +980,16 @@ ol {
   fill: currentColor;
 }
 
-.sending {
-  margin-left: 93px;
-}
-
 .sending__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--third-text-color);
   margin-bottom: 20px;
+}
+
+.sending-area {
+  position: relative;
 }
 
 .sending__label {
@@ -998,14 +1004,14 @@ ol {
 }
 
 .sending__input {
-  width: 358px;
+  margin: 0 auto;
+  width: 100%;
   height: 50px;
   outline: none;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 72px;
   color: #ffffff;
   transition-property: border;
   transition-duration: 250ms;
@@ -1015,12 +1021,8 @@ ol {
   border: 1px solid var(--primary-accent-color);
 }
 
-.sending__email {
-  position: relative;
-  display: flex;
-}
-
 .sending__button {
+  position: relative;
   min-width: 200px;
   padding: 10px 62px 10px 28px;
   color: var(--third-text-color);
@@ -1034,7 +1036,7 @@ ol {
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 12px;
+  margin-top: 20px;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

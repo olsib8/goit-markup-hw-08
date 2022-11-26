@@ -1,12 +1,15 @@
-.sending {
-  margin-left: 93px;
-}
+// .sending {
+//   margin-left: 93px;
+// }
 .sending__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--third-text-color);
   margin-bottom: 20px;
+}
+.sending-area {
+  position: relative;
 }
 .sending__label {
   font-weight: 400;
@@ -19,14 +22,15 @@
   transform: translate(0, -50%);
 }
 .sending__input {
-  width: 358px;
+  margin: 0 auto;
+  width: 100%;
   height: 50px;
   outline: none;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 72px;
+  // padding-left: 72px;
   color: #ffffff;
   transition-property: border;
   transition-duration: 250ms;
@@ -38,10 +42,11 @@
 }
 
 .sending__email {
-  position: relative;
-  display: flex;
+  // position: relative;
+  // display: flex;
 }
 .sending__button {
+  position: relative;
   min-width: 200px;
   padding: 10px 62px 10px 28px;
   color: var(--third-text-color);
@@ -55,7 +60,8 @@
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 12px;
+  margin-top: 20px;
+  // margin-left: 12px;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
