@@ -179,9 +179,15 @@ ol {
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--fifth-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo--color {
@@ -216,25 +222,55 @@ ol {
 }
 
 .hero__overlay {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mob-1.jpg);
   background-color: var(--sixth-background-color);
-  max-width: 1600px;
-  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mob-2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tab-1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tab-2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-desk-1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-desk-2.jpg);
+  }
 }
 
 .hero__title {
   color: var(--third-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -892,6 +928,21 @@ ol {
 .footer__area {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__area {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__block {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .logo__footerColor {
   color: var(--third-text-color);
@@ -900,6 +951,11 @@ ol {
 .logo__address {
   margin-top: 28px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .logo__address {
+    margin-bottom: 0;
+  }
 }
 
 .address__distance {
@@ -932,11 +988,23 @@ ol {
 .address__text {
   font-style: normal;
   font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.44;
 }
 
 .footer__secondary {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__secondary {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__secondary {
+    margin-left: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__title {
@@ -980,6 +1048,18 @@ ol {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .sending {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sending {
+    margin-left: 94px;
+    margin-top: 0;
+  }
+}
+
 .sending__title {
   font-weight: 700;
   line-height: 1.14;
@@ -990,6 +1070,17 @@ ol {
 
 .sending-area {
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .sending-area {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sending-area {
+    width: 358px;
+  }
 }
 
 .sending__label {
@@ -1021,6 +1112,12 @@ ol {
   border: 1px solid var(--primary-accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .sending__email {
+    display: flex;
+  }
+}
+
 .sending__button {
   position: relative;
   min-width: 200px;
@@ -1040,6 +1137,12 @@ ol {
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .sending__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 .sending__button:hover, .sending__button:focus {
   background-color: var(--fifth-background-color);

@@ -1,6 +1,12 @@
-// .sending {
-//   margin-left: 93px;
-// }
+.sending {
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+    margin-top: 0;
+  }
+}
 .sending__title {
   font-weight: 700;
   line-height: 1.14;
@@ -10,6 +16,13 @@
 }
 .sending-area {
   position: relative;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .sending__label {
   font-weight: 400;
@@ -30,6 +43,7 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
   // padding-left: 72px;
   color: #ffffff;
   transition-property: border;
@@ -42,8 +56,9 @@
 }
 
 .sending__email {
-  // position: relative;
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .sending__button {
   position: relative;
@@ -60,11 +75,15 @@
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
+
   margin-top: 20px;
-  // margin-left: 12px;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

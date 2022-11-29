@@ -7,6 +7,18 @@
 }
 .footer__area {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+  }
+}
+.footer__block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
 }
 .logo__footerColor {
   color: var(--third-text-color);
