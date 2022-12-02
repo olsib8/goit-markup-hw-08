@@ -60,3 +60,8 @@ ol {
   margin: 0;
   padding-left: 0;
 }
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}

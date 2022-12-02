@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list options nav__options">
+        <ul class="list options nav__options options__tablet">
           <li>
             <a href="mailto:info@devstudio.com" class="options__link options__text text">
               <svg class="options__icon" width="16" height="12">
@@ -57,9 +57,58 @@
             >
           </li>
         </ul>
-                <a href="" class="text mob-menu__link">Контакти</a>
+        <button type="button" class="menu__open" data-menu-open>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-          div
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <div>
+            <button type="button" class="menu__close" data-menu-close>
+              <svg class="menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="text mob-menu__link mob-menu--accent">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="text mob-menu__link">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="text mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="list mob-menu__list">
+              <li class="mob-menu__area">
+                <a href="./index.html" class="text mob-menu__tel">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu__area">
+                <a href="./portfolio.html" class="text mob-menu__mail">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="list mob-soc__list">
+              <li class="mob__socItem">
+                <a href="./index.html" class="text mob__socLink">Instagram</a>
+              </li>
+              <li class="mob__socItem">
+                <a href="./portfolio.html" class="text mob__socLink">Twitter</a>
+              </li>
+              <li class="mob__socItem">
+                <a href="./index.html" class="text mob__socLink">Facebook</a>
+              </li>
+              <li class="mob__socItem">
+                <a href="./portfolio.html" class="text mob__socLink">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
       <section class="hero main__hero hero__overlay">
@@ -553,5 +602,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
