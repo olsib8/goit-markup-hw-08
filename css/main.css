@@ -162,10 +162,12 @@ ol {
   padding-top: 48px;
   padding-bottom: 48px;
   top: 0;
+  left: 0;
 }
 
 .mob-container {
   padding-left: 40px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -398,6 +400,8 @@ ol {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
+  height: 100%;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__overlay {
@@ -416,6 +420,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
+    height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk-1.jpg);
   }
 }
